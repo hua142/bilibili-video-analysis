@@ -80,29 +80,42 @@ pnpm build
 pnpm start
 ```
 
-## 📁 项目结构
+## 🚀 部署到 GitHub
 
-```
-├── src/
-│   ├── app/                    # Next.js App Router
-│   │   ├── page.tsx           # 总览页面
-│   │   ├── views/page.tsx     # 浏览量分析
-│   │   ├── likes/page.tsx     # 点赞量分析
-│   │   ├── comments/page.tsx  # 评论分析
-│   │   ├── shares/page.tsx    # 分享分析
-│   │   ├── layout.tsx         # 根布局
-│   │   └── globals.css        # 全局样式
-│   ├── components/             # React 组件
-│   │   ├── Navbar.tsx         # 导航栏
-│   │   └── StatCard.tsx       # 统计卡片
-│   └── lib/                    # 工具库和数据
-│       └── data.ts            # 模拟数据
-├── public/                     # 静态资源
-├── .coze                       # 部署配置
-├── package.json
-├── tsconfig.json
-└── README.md
-```
+### 快速上手（推荐）
+
+1. **创建 GitHub 仓库**
+   - 访问 [github.com/new](https://github.com/new)
+   - Repository name: `bilibili-video-analysis`
+   - 选择 Public 或 Private
+   - ⚠️ **不要勾选** "Initialize this repository with a README"
+   - 点击 **Create repository**
+
+2. **推送代码**（在项目目录执行）
+   ```bash
+   cd /workspace/projects
+   
+   # 添加远程仓库（替换为你的仓库URL）
+   git remote add origin https://github.com/你的用户名/bilibili-video-analysis.git
+   
+   # 推送代码
+   git branch -M main
+   git push -u origin main
+   ```
+
+3. **查看项目数据**
+   ```
+   https://github.com/你的用户名/bilibili-video-analysis/graphs
+   ```
+
+### 项目数据指标
+
+- ⭐ **Stars**: 收藏数 - 项目受欢迎程度
+- 👁️ **Watchers**: 关注者数
+- 🍴 **Forks**: 派生数 - 项目影响力
+- 📊 **Traffic**: 访问统计 - 项目热度
+
+---
 
 ## 📈 数据说明
 
