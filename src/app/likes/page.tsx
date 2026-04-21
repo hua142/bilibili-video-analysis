@@ -164,10 +164,6 @@ export default function LikesPage() {
                   border: "1px solid #f0f0f0",
                   borderRadius: "8px"
                 }}
-                formatter={(value: any, name: string) => [
-                  name === 'rate' ? value + '%' : value.toLocaleString(),
-                  name === 'rate' ? '点赞率' : '点赞数'
-                ]}
               />
               <Legend />
               <Bar dataKey="likes" fill="#fb7299" name="点赞数" radius={[8, 8, 0, 0]} />

@@ -131,7 +131,7 @@ export default function SharesPage() {
                   cx="50%"
                   cy="50%"
                   outerRadius={100}
-                  label={({ channel, percent }) => `${channel} ${(percent * 100).toFixed(0)}%`}
+                  label={({ name, percent }) => `${name} ${(Number(percent) * 100).toFixed(0)}%`}
                 >
                   {shareChannelData.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={entry.color} />

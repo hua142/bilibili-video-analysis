@@ -114,7 +114,7 @@ export default function HomePage() {
                   cx="50%"
                   cy="50%"
                   outerRadius={100}
-                  label={(entry) => entry.category}
+                  label={({ name }) => name}
                 >
                   {categoryData.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={["#fb7299", "#23b8ff", "#fa5a57", "#7c3aed", "#10b981", "#f59e0b", "#06b6d4"][index % 7]} />
