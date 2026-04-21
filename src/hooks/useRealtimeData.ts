@@ -4,13 +4,22 @@ import { useState, useEffect, useCallback, useRef } from "react";
 
 export interface RealtimeData {
   timestamp: string;
+  date: string;
+  dateInfo: {
+    today: string;
+    startTime: string;
+    elapsedSeconds: number;
+    progress: string;
+    resetTime: string;
+  };
   statistics: {
-    totalViews: number;
-    totalLikes: number;
-    totalCoins: number;
-    totalFavorites: number;
-    totalShares: number;
-    totalComments: number;
+    dailyViews: number;
+    dailyLikes: number;
+    dailyCoins: number;
+    dailyFavorites: number;
+    dailyShares: number;
+    dailyComments: number;
+    dailyPeakViews: number;
   };
   trendData: Array<{
     date: string;
